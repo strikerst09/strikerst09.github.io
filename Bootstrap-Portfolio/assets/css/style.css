@@ -1,0 +1,241 @@
+/*Starts With About Me (index.html)*/
+* {
+    background:#ffffff;
+    line-height:32px;
+    font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+html{
+    height: 100%;
+}
+body {
+    background-image: url(../images/leaves-pattern.png);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+#Header{
+    top:0;
+    margin:0;
+    text-align:left;
+    font-size: 30px;
+    width:100%;
+    background: #ffffff;
+    border-bottom-style:solid;
+    border-color: #cccccc;
+    flex-shrink: 0;
+}
+#headerbox {
+    width: 960px;
+    margin-left: 15%;
+}
+#NameBox {
+    float:left;
+    font-style:normal;
+}
+#Name {
+    font-family: Georgia, Times, Times New Roman, serif;
+    margin:0;
+    padding:10px;
+    font-size:20px;
+    background-color:#4aaaa5;
+    color:#ffffff;
+}
+#Links {
+    float: right;
+    padding: 10px;
+    color:#666666;
+    font-size:16px;
+    font-style:normal;
+}
+h2 {
+    font-family: Georgia, Times, Times New Roman, serif;
+    color:#4aaaa5;
+}
+a.nav-item.nav-link{
+    float: right;
+}
+#button1 {
+    display:flex;
+    align-items:right;
+    float:right;
+    margin-top:10px;
+    margin-right:30%;
+}
+#button2 {
+    display:flex;
+    align-items:right;
+    float:right;
+    margin-top:10px;
+}
+#button3 {
+    display:flex;
+    align-items:right;
+    float:right;
+    margin-top:10px;
+}
+#AboutMeContent {
+    padding:20px;
+    margin-top:20px;
+    width:960px;
+    margin-left:15%;
+    font-family: Georgia, Times, Times New Roman, serif;
+    color:#777777;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 2px;
+}
+#AboutMe {
+    float:left;
+    padding-left:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4aaaa5;
+    background-color: #ffffff;
+}
+#Myimg {
+    float: left;
+    padding-right: 10px;
+    width: auto;
+}
+footer{
+    margin-top:auto;
+    text-align:center;
+    padding-top: 12px;
+    padding-bottom:0px;
+    bottom:0;
+    background-color:#666666;
+    color: #cccccc;
+    font-size:12px;
+    border-top-style:solid;
+    border-color:#4aaaa5;
+    border-width:8px;
+    flex-shrink: 0;
+}
+/*Adding Contact pieces here*/
+#ContactPage{
+    width:960px;
+    padding:20px;
+    margin-top:20px;
+    margin-left:15%;
+    overflow:auto;
+    font-family: Georgia, Times, Times New Roman, serif;
+    color:#777777;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 2px;
+}
+#ContactHeader {
+    font-family: Georgia, Times, Times New Roman, serif;
+}
+#ContactForm {
+    color: #666666;
+}
+#ContactMessage {
+    height:320px;
+    width:900px;
+    padding:15px;
+    text-align:left;
+    font-family: Georgia, Times, Times New Roman, serif;
+    border-color:#dddddd;
+    border-style:solid;
+    border-width:1px;
+}
+input {
+    border-color:#dddddd;
+    border-style:solid;
+    border-width:1px;
+    color:#666666;
+    padding:5px;
+}
+#SubmitButton {
+    float:left;
+    background-color:#4aaaa5;
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a { 
+    text-decoration: none;
+    transition: font-size .5s;
+}
+a.bannerlink {
+    background-color:#4aaaa5;
+    color: #ffffff;
+}
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    font-weight: bold;
+    font-size: 24px;
+}
+/*Adding Portfolio Page here*/
+#PortfolioPage {
+    width:960px;
+    padding:20px;
+    margin-top:20px;
+    margin-left:15%;
+    font-family: Georgia, Times, Times New Roman, serif;
+    color:#666666;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 2px;
+}
+.img img {
+    width: 300px;
+    height: 250px;
+}
+div.imgbox{
+    float: left;
+    margin: 10px;
+    position: relative;
+    z-index: 2;
+}
+.banner {
+    bottom: 10px;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+/*Hopefully prevents navbar collapse */
+
+.navbar-collapse.collapse {
+    display: block!important;
+  }
+  
+  .navbar-nav>li, .navbar-nav {
+    float: right !important;
+  }
+  
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+  }
+  
+  .navbar-right {
+    float: right!important;
+  }
+
+/*Media queries beyond this point. */
+
+@media screen and (max-width: 980px) {
+    #headerbox {
+        margin-left: 5%;
+    }
+    #Myimg {
+        float: left;
+    }
+    #AboutMeContent {
+        margin-left: 5%;
+    }
+    #ContactPage{
+        margin-left: 5%;
+    }
+    .img img {
+        float: left;
+    }
+}
